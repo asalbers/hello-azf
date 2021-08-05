@@ -54,7 +54,7 @@ install:
         - "account"
         - "create"
       flags:
-        name: "{{ bundle.outputs.random-string}}"
+        name: "{{ bundle.outputs.random_string}}"
         location: "eastus2"
         resource-group: "{{ bundle.parameters.AZURE_RESOURCE_GROUP_NAME}}"
         sku: "Standard_LRS"
@@ -65,9 +65,9 @@ install:
         - "functionapp" 
         - "create" 
       flags:
-        name: "{{ bundle.outputs.random-string}}"
+        name: "{{ bundle.outputs.random_string}}"
         resource-group: "{{ bundle.parameters.AZURE_RESOURCE_GROUP_NAME}}"
-        storage-account: "{{ bundle.outputs.random-string}}"
+        storage-account: "{{ bundle.outputs.random_string}}"
         functions-version: 3
         consumption-plan-location: "eastus2"
       outputs: 
@@ -81,7 +81,7 @@ install:
         - "source"
         - "config-zip"
       flags:
-        name: "{{ bundle.outputs.random-string}}"
+        name: "{{ bundle.outputs.random_string}}"
         resource-group: "{{ bundle.parameters.AZURE_RESOURCE_GROUP_NAME}}"
         source: "{{bundle.parameters.APP_SRC_FILE}}"
         
