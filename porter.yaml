@@ -1,5 +1,5 @@
 name: hello-azf
-version: 0.1.0
+version: 0.1.1
 description: "An example Porter configuration"
 # TODO: update the registry to your own, e.g. myregistry
 registry: ghcr.io/asalbers
@@ -120,7 +120,7 @@ parameters:
   - name: AZURE_RESOURCE_GROUP_NAME
     description: "The azure resource group to use or create for the cluster resources."
     type: string
-    default: hellokeyvault
+    default: helloazf
   - name: AZURE_GROUP_REGION
     description: "The azure resource group to use or create for the cluster resources."
     type: string
@@ -133,14 +133,6 @@ parameters:
       - "uninstall"
     source:
       output: random_string
-  - name: keyvault_name
-    description: "The name of the created KeyVault."
-    type: string
-    source:
-      output: keyvault_name
-    applyTo:
-      - "upgrade"
-      - "uninstall"
   - name: AZURE_GROUP_REGION
     description: "The azure resource group to use or create for the cluster resources."
     type: string
