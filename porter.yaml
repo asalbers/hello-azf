@@ -1,5 +1,5 @@
 name: hello-azf
-version: 0.1.2
+version: 0.1.3
 description: "An example Porter configuration"
 # TODO: update the registry to your own, e.g. myregistry
 registry: ghcr.io/asalbers
@@ -43,9 +43,9 @@ install:
       description: "Setting random string...."
       command: ./helpers.sh
       arguments:
-        - random-string
+        - random_string
       outputs:
-        - name: random-string
+        - name: random_string
           regex: "(.*)"
   - az:
       description: "Creating the Azure Function storage account...."
