@@ -148,8 +148,3 @@ outputs:
     type: string
     applyTo:
       - "install"
-  - name: keyvault_name
-    description: "The keyvault name that is created."
-    type: string
-    applyTo:
-      - "install"
