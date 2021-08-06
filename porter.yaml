@@ -1,5 +1,5 @@
 name: hello-azf
-version: 0.1.6
+version: 0.1.7
 description: "An example Porter configuration"
 # TODO: update the registry to your own, e.g. myregistry
 registry: ghcr.io/asalbers
